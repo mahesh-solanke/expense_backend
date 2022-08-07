@@ -1,0 +1,35 @@
+GET API's
+	1. link/UserData/<username>
+		Use: To get User data
+	2. link/ExpenseData/<userID>
+		Use: To get Expenses data fro Specific User
+	3. link/category/<categoryname>
+		Use: TO get category Details
+
+
+POST API's
+	1. link/UserData
+		Required format = {'user_name':'your_username','name':'your_name','password':'your_password'}
+		Use: To create a new user 
+
+	2. link/ExpenseData/<userID>
+		require format = {'discription':'Expense_discription','amount':'expense_amount','category_id':'Expense_category_id'}
+		Use: To save expenses
+
+	3. link/category
+		require format = {'expense_category':'Category_name','color':'color_hex_code'}
+		Use: To create new Category
+
+
+
+PUT API's
+
+	1. link/ExpenseData/<userID>/<expenseID>
+		required format = {'Discription':'Expense_discription','Amount':'expense_amount','category_id':'Expense_category_id'}
+		Note?: send the data whatever you want to edit
+		Use: To Update the existing Expenses
+
+
+Delete API's
+	1. link/ExpenseData/<userID>/<expenseID>
+		Use: To delete the already created Expenses
